@@ -1,6 +1,6 @@
 {
-  "name": "bacon-cipher",
-  "version": "1.0.0",
+  "name": "@yaas/bacon-cipher",
+  "version": "1.0.1",
   "description": "",
   "main": "cipher.js",
   "scripts": {
@@ -9,6 +9,9 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/yaas-dev/bacon-cipher.git"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "author": "Sam Price",
   "license": "MIT",

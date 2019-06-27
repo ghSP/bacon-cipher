@@ -49,7 +49,10 @@ function titleCase(str = '') {
   }).join(' ');
 }
 
+const version = require('./package.json').version;
+
 module.exports = {
   encode,
-  decode
+  decode,
+  version
 }
