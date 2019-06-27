@@ -21,7 +21,7 @@ function encode(text = '') {
   return final.join('');
 }
 
-function decode(text = '', titleCase = true) {
+function decode(text = '', isTitleCase = true) {
   const final = [];
   const split = text.split('');
   let charGroup = [];
@@ -40,7 +40,7 @@ function decode(text = '', titleCase = true) {
       final.push(char);
     }
   }
-  return titleCase ? titleCase(final.join('')) : final.join('');
+  return isTitleCase ? titleCase(final.join('')) : final.join('');
 }
 
 function titleCase(str = '') {
