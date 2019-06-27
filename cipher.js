@@ -3,7 +3,7 @@
  * @description A Bacon Cipher
  */
 
-const cipher = ['AAAAA', 'AAAAB', 'AAABA', 'AAABB', 'AABAA', 'AABAB', 'AABBA', 'AABBB', 'ABAAA', 'ABAAB', 'ABAAB', 'ABABA', 'ABABB', 'ABBAA', 'ABBAB', 'ABBBA', 'ABBBB', 'BAAAA', 'BAAAB', 'BAABA', 'BAABB', 'BABAB', 'BABAA', 'BABAB', 'BABBA', 'BABBB'];
+const cipher = ['AAAAA','AAAAB','AAABA','AAABB','AABAA','AABAB','AABBA','AABBB','ABAAA','ABAAB','ABABA','ABABB','ABBAA','ABBAB','ABBBA','ABBBB','BAAAA','BAAAB','BAABA','BAABB','BABAA','BABAB','BABBA','BABBB','BBAAA','BBAAB'];
 const orig = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
 
 function encode(text = '') {
@@ -27,7 +27,7 @@ function decode(text = '', isTitleCase = true) {
   let charGroup = [];
   for (let i = 0; i < split.length; i++) {
     const char = split[i].toUpperCase();
-    if (char == 'A' || char == 'B') {
+    if (/[AB]/.test(char)) {
       if (charGroup.length === 4) {
         charGroup.push(char)
         const index = cipher.indexOf(charGroup.join(''));
