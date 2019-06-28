@@ -1,6 +1,6 @@
 {
   "name": "@yaas/bacon-cipher",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "",
   "main": "cipher.js",
   "scripts": {
@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/yaas-dev/bacon-cipher/issues"
   },
-  "homepage": "https://github.com/yaas-dev/bacon-cipher#readme"
+  "homepage": "https://github.com/yaas-dev/bacon-cipher#readme",
+  "dependencies": {
+    "tape": "~4.10.2"
+  }
 }
